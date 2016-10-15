@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="js/comp/ion-floating-menu.css" rel="stylesheet">
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <script defer src="lib/lodash.js"></script>
+    <script defer src="js/comp/ion-floating-menu.js"></script>
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script defer src="lib/markercluster.js"></script>
+    <script defer src="js/app.js"></script>
+    <script defer src="js/controllers.js"></script>
+    <script defer src="js/services.js"></script>
+
+    <style>
+        .scroll {
+            height: 100%;
+        }
+        
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body ng-app="romanescU">
+    <ion-nav-view></ion-nav-view>
+    <!--&callback=initMap-->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBbFOmMJagRxPAR-TiLbsep1uqtXl9xl0s&libraries=geometry"></script>
+</body>
+
+</html>

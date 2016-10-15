@@ -1,0 +1,16 @@
+.tabs {
+  height:12vh!important;
+  padding-top:1.5vh!important;
+  padding-bottom:1.5vh!important;
+  .tab-item {
+    font-size:14px!important;
+    line-height:18px!important;
+    .icon {
+      height:42px!important;
+      font-size:42px!important;
+    }
+  }
+}
+#floating-menu {
+  bottom:14vh;
+}

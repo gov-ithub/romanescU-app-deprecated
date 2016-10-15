@@ -1,0 +1,20 @@
+.user-meta {
+  margin-bottom:0;
+  border:none;
+  .item {
+  	background-color:transparent!important;
+  	&.item-avatar {
+  		padding-left:112px;
+  		min-height:112px;
+  		img {
+  			max-width:inherit;
+  			max-height:inherit;
+  			width:80px;
+  			height:80px;
+  		}
+  		h2 {
+  			margin-top:22px;
+  		}
+  	}
+  }
+}

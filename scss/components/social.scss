@@ -1,0 +1,24 @@
+.social-buttons {
+	.button {
+		&.ion-social-facebook {
+			color:white;
+			background-color:#3b5998;
+		}
+		&.ion-social-whatsapp {
+			color:white;
+			background-color:#43d854;
+		}
+		&.ion-social-twitter {
+			color:white;
+			background-color:#1da1f2;
+		}
+		&.ion-social-googleplus {
+			color:white;
+			background-color:#dd4b39;
+		}
+		&.ion-social-pinterest {
+			color:white;
+			background-color:#bd081c;
+		}
+	}
+}

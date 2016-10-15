@@ -1,0 +1,67 @@
+
+.news-feed {
+	font-family:"Source Sans Pro";
+	h3, h2 {
+		font-family:"Source Sans Pro";
+	}
+	.row {
+		padding:0;
+	}
+	aside {
+		background-color:#fafafa;
+		padding:6px 10px;
+		border-right:1px solid #ddd;
+	}
+	.article-date {
+		text-align:center;
+		// background-color:$dark;
+		color:$dark;
+		font-weight:700;
+		padding:8px 0;
+		p {
+			margin:0;
+		}
+		.day {
+			font-size:28px;
+			margin-bottom: 6px; 
+		}
+		.month {
+			font-size:18px;
+			text-transform:uppercase;
+		}
+	}
+	header, footer {
+		.item {
+			border:none;
+		}
+	}
+	header {
+		.item {
+			
+		}
+	}
+	footer {
+		border-bottom:1px solid #eee;
+		margin-bottom:6px;
+		.social-buttons {
+			margin-top:6px;
+			overflow:hidden;
+			transition:all 1s;
+		}
+		.hidden {
+			display:block;
+			height:0;
+		}
+	}
+	.article-meta {
+		h2 {
+			white-space:initial;
+		}
+	}
+	.std {
+		img {
+			max-width:100%;
+			height:auto;
+		}
+	}
+}

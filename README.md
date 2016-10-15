@@ -1,2 +1,2 @@
-# romanescU-app
-Aplicatia Romanului de Pretutindeni
+# RomanescU
+_aplicatia romanului de pretutindeni_

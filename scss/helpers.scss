@@ -1,0 +1,36 @@
+.img-responsive {
+	width:100%;
+	height:auto;
+}
+
+.max-responsive {
+	max-width:100%;
+	height:auto;
+}
+
+.hidden {
+	display:none;
+}
+
+.text-muted {
+	color:#666;
+}
+
+.button-small .icon:before, .button-small.icon:before, .button-small.icon-left:before, .button-small.icon-right:before {
+	line-height:23px;
+}
+
+/*
+.tabs {
+	padding:2vh 0;
+	height:16vw;
+	.tab-item {
+		font-size:2vh !important;
+		line-height:24px !important;
+		.icon {
+			font-size:8vw;
+			height:8vw;
+		}
+	}	
+}
+*/
