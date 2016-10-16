@@ -3,7 +3,8 @@
   "version": "1.1.1",
   "description": "RomanescU: Aplicatia Romanului de Pretutindeni",
   "scripts": {
-    "postinstall": "bower install && gulp build"
+    "install": "npm cache clean && node ./node_modules/bower/bin/bower cache clean && node ./node_modules/bower/bin/bower install --allow-root",
+    "postinstall": "node ./node_modules/gulp/bin/gulp wiredep build"
   },
   "dependencies": {
     "browser-sync": "^2.17.3",
@@ -18,6 +19,8 @@
     "gulp-rename": "^1.2.0",
     "gulp-sass": "^2.0.4",
     "gulp-uglify": "^2.0.0",
+    "lodash": "^4.16.4",
+    "main-bower-files": "^2.13.1",
     "require-dir": "^0.3.1",
     "wiredep": "^4.0.0"
   },
