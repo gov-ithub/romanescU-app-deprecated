@@ -10,7 +10,7 @@ gulp.task('wiredep', function() {
         .pipe(wiredep({
             bowerJson: require('./../../bower.json'),
             directory: 'bower_components/',
-            ignorePath: '../'
+            ignorePath: 'www/'
         }))
         .pipe(gulp.dest('./www/'));
 })
