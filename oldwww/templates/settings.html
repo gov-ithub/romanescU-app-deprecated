@@ -1,0 +1,44 @@
+<ion-view view-title="Setări">
+  <ion-content>
+    <div class="list">
+        <h4 class="padding-horizontal">Despre mine</h4>
+        <label class="item item-input item-stacked-label">
+			<span class="input-label">Prenume</span>
+			<input type="text" placeholder="Ion" ng-model="user.fname">
+		</label>
+        <label class="item item-input item-stacked-label">
+			<span class="input-label">Nume</span>
+			<input type="text" placeholder="Popescu" ng-model="user.lname">
+		</label>
+        <label class="item item-input item-stacked-label">
+			<span class="input-label">Adresă email</span>
+			<input type="email" placeholder="ionpopescu@areemail.ro" ng-model="user.email">
+		</label>
+    </div>
+    <div class="list">
+        <h4>Locația mea</h4>
+        <label class="item item-input">
+			<input type="text" placeholder="Caută adresa">
+			<button class="button button-small button-icon icon ion-pinpoint"></button>
+		</label>
+
+    </div>
+    <div class="list">
+        <h4>Interesele mele</h4>
+        <ion-list>
+            <div ng-repeat="group in groups">
+                <ion-item class="item-stable" ng-click="toggleGroup(group)" ng-class="{active: isGroupShown(group)}">
+                    <i class="icon" ng-class="isGroupShown(group) ? 'ion-minus' : 'ion-plus'"></i> &nbsp; {{group.name}}
+                </ion-item>
+                <div class="item-accordion" ng-show="isGroupShown(group)">
+                    <ion-checkbox ng-repeat="item in group.items">{{item}}</ion-checkbox>
+                </div>
+            </div>
+        </ion-list>
+    </div>
+    <button class="button button-block button-balanced">
+	  Salvează
+	</button>
+
+  </ion-content>
+</ion-view>
