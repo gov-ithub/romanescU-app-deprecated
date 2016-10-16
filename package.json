@@ -4,7 +4,7 @@
   "description": "RomanescU: Aplicatia Romanului de Pretutindeni",
   "scripts": {
     "install": "npm cache clean && node ./node_modules/bower/bin/bower cache clean && node ./node_modules/bower/bin/bower install --allow-root",
-    "postinstall": "node ./node_modules/gulp/bin/gulp wiredep build"
+    "postinstall": "node ./node_modules/gulp/bin/gulp build"
   },
   "dependencies": {
     "browser-sync": "^2.17.3",
