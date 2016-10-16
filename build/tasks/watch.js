@@ -9,7 +9,7 @@ gulp.task('watch', function() {
     });
 
     // When stylesheets are changed
-    gulp.watch(['./scss/ionic.app.scss', './src/scss/style.scss', './src/**/*.css'], function(event) {
+    gulp.watch(['./src/scss/style.scss', './src/**/*.css'], function(event) {
         gulp.start('styles');
     })
 
