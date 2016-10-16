@@ -1,0 +1,11 @@
+{
+    "name": "RomanescU",
+    "short_name": "RomanescU",
+    "start_url": "index.html",
+    "display": "standalone",
+    "icons": [{
+        "src": "icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    }]
+}

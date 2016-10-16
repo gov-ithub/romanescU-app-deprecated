@@ -2,12 +2,24 @@
   "name": "romanescu",
   "version": "1.1.1",
   "description": "RomanescU: Aplicatia Romanului de Pretutindeni",
+  "scripts": {
+    "postinstall": "bower install && gulp build"
+  },
   "dependencies": {
+    "browser-sync": "^2.17.3",
     "gulp": "^3.5.6",
-    "gulp-sass": "^2.0.4",
+    "gulp-angular-filesort": "^1.1.1",
+    "gulp-angular-templatecache": "^2.0.0",
     "gulp-concat": "^2.2.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-inject": "^4.1.0",
     "gulp-minify-css": "^0.3.0",
-    "gulp-rename": "^1.2.0"
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-uglify": "^2.0.0",
+    "require-dir": "^0.3.1",
+    "wiredep": "^4.0.0"
   },
   "devDependencies": {
     "bower": "^1.3.3",

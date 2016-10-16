@@ -1,0 +1,57 @@
+<ion-view view-title="Știri">
+    <ion-content class="news-feed">
+    	<article class="row responsive-xs" ng-repeat="(key,news) in newsFeed">
+    		<aside class="col col-20">
+    			<div class="article-date">
+	    			<p class="day">{{news.data.date | date:'dd'}}</p>
+	    			<p class="month">{{news.data.date | date:'MMM'}}</p>
+	    		</div>
+    		</aside>
+    		
+    		<section class="col">
+    			<header class="article-meta">
+	    			<a class="item no-border item-avatar" href="{{news.author.url}}" target="_blank">
+	                  	<img class="avatar" src="{{news.author.logo}}" alt="" />
+	                  	<h2>{{news.author.name}}</h2>
+	                  	<p>{{news.category}}</p>
+	                </a>
+	    		</header>
+	    		<div class="std padding-horizontal" ng-click="goToSingle('{{news._id}}')">
+	    			<h3 class="article-title">{{news.data.title}}</h3>
+		    		<div class="article-excerpt">
+		    			<span ng-bind-html="news.data.description | limitTo: 120"></span>...
+		    			<p><a ng-href="#/app/news_view/{{news._id}}">Citește mai mult</a></p>
+		    		</div>
+	    		</div>
+	    		
+	    		<footer class="padding">
+	    			<a href="{{news.data.link}}" class="button button-light button-small icon-left ion-android-open" target="_blank">Sursă</a>
+	    			<a class="button button-small button-light icon-left ion-ios-book">Salvează</a>
+	    			<a style="float:right;" class="button button-small button-balanced icon-left ion-android-share-alt" ng-click="toggleSocial($event)">Distribuie</a>
+	    			<div class="social-buttons button-bar hidden">
+	    				<a class="button button-small icon ion-social-facebook"></a>
+	    				<a class="button button-small icon ion-social-whatsapp"></a>
+	    				<a class="button button-small icon ion-social-twitter"></a>
+	    				<a class="button button-small icon ion-social-googleplus"></a>
+	    				<a class="button button-small icon ion-social-pinterest"></a>
+	    			</div>
+	    		</footer>
+    		</section>
+    	</article>
+        <!-- <ion-list class="news-feed">
+            <div ng-repeat="news in newsFeed" href="#/app/news_view/1">
+            	<div ng-switch="news.image || '_undefined_'">
+            		<ion-item ng-switch-when="_undefined_">
+            			<h2>{{news.title}}</h2>
+                		<p>{{news.pubDate}}</p>
+            		</ion-item>
+            		<ion-item class="item-thumbnail-left" ng-switch-default>
+            			<img src="{{news.image}}" ng-if="news.image" />
+		                <h2>{{news.title}}</h2>
+		                <p>{{news.pubDate}}</p>	
+            		</ion-item>
+            	</div>
+            </div>
+        </ion-list> -->
+    </ion-content>
+</ion-view>
