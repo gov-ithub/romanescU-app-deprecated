@@ -9,6 +9,7 @@ gulp.task('build', [
     'assets', 
     'data', 
     'images',
+    'fonts',
     'manifest',
     'inject'
 ]);
