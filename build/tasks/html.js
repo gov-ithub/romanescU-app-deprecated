@@ -16,8 +16,7 @@ gulp.task('templatesCache', function(done){
         }))
         .pipe(gulp.dest('./www/templates/'))
         .pipe(angularTemplateCache('templates.js', {
-            module: 'romanescU',
-            standAlone: false
+            standalone: true
         }))
         .pipe(gulp.dest('./www/js/'));
 });

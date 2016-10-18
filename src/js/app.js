@@ -1,4 +1,4 @@
-var app = angular.module('romanescU', ['ionic', 'romanescU.controllers', 'romanescU.services','ngSanitize','ion-floating-menu'])
+var app = angular.module('romanescU', ['ionic', 'templates', 'romanescU.controllers', 'romanescU.services','ngSanitize','ion-floating-menu'])
 
 .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {
@@ -15,7 +15,7 @@ var app = angular.module('romanescU', ['ionic', 'romanescU.controllers', 'romane
         }
     });
 })
-
+  
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('app', {
