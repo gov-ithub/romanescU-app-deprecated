@@ -2,6 +2,7 @@
   "name": "RomanescU",
   "app_id": "",
   "gulpStartupTasks": [
+    "build",
     "watch"
   ],
   "watchPatterns": [

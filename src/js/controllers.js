@@ -10,6 +10,7 @@ angular.module('romanescU.controllers', [])
         //});
 
         $scope.appName = app.name;
+   
 
         // Form data for the login modal
         $scope.loginData = {};

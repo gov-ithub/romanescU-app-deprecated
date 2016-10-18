@@ -15,7 +15,7 @@ var app = angular.module('romanescU', ['ionic', 'templates', 'romanescU.controll
         }
     });
 })
-
+  
 .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('app', {
