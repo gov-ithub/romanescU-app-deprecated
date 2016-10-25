@@ -13,9 +13,15 @@ _aplicatia romanului de pretutindeni_
 
 ## :computer: Contributors
 
-|    | Name | Rol | 
+|    | Nume | Rol | 
 ----- | ---- | ------- | -------:
-:boy:  |  Gabriel  | Lead | 
+:boy:  |  Gabriel  | PM | 
+:boy:  |  Liviu  | Code:star: | 
+:boy:  |  Traian  | PM | 
+:boy:  |  Calin  | Code:star: | 
+:boy:  |  Marin  | Code:star: | 
+:boy:  |  Adrian  | Code:star: | 
+:boy:  |  Mihai  | Code:star: | 
 
 ----------
 
