@@ -11,7 +11,7 @@ _aplicatia romanului de pretutindeni_
 ------
 ------
 
-## :computer: Contributors
+## :computer: Contributors 
 
 |    | Nume | Rol | 
 ----- | ---- | ------- | -------:
