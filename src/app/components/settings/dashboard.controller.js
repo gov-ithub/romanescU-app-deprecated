@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('romanescU')
-    .controller('settingsCtrl', function() {
+    .controller('SettingsController', function() {
         var vm = this;
 
         vm.playlists = [

@@ -8,6 +8,11 @@
   "globals": {
     "angular": true,
     "module": true,
-    "inject": true
+    "inject": true,
+    "cordova": true,
+    "StatusBar": true,
+    "google": true,
+    "geodesicPoly": true,
+    "poly": true
   }
 }

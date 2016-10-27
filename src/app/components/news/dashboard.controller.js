@@ -3,10 +3,9 @@
     /*eslint angular/di: [2,"array"]*/
 
     angular.module('romanescU')
-        .controller('newsCtrl', ['$scope', '__mongo', '$rootScope',
+        .controller('NewsController', ['$scope', '__mongo', '$rootScope',
             function($scope, __mongo, $rootScope) {
-                var vm = this,
-                    vmLocal = {};
+                var vm = this;
 
                 // -->INIT: vars
                 vm.newsFeed = [];
@@ -28,7 +27,6 @@
 
                 // TODO:: fetch the list of companies from the server and display here
                 $scope.$on("$destroy", function() {
-                    vmLocal = null;
                 })
             }
         ]);

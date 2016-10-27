@@ -3,8 +3,6 @@
     "version": "1.1.1",
     "description": "RomanescU: Aplicatia Romanului de Pretutindeni",
     "scripts": {
-        "install": "npm cache clean && node ./node_modules/bower/bin/bower cache clean && node ./node_modules/bower/bin/bower install --allow-root",
-        "postinstall": "node ./node_modules/gulp/bin/gulp build"
     },
     "dependencies": {
         "gulp-concat": "^2.2.0",
