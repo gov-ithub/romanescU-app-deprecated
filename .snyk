@@ -1,0 +1,50 @@
+version: v1.5.0
+ignore:
+  'npm:connect:20130701':
+    - browser-sync > browser-sync-ui > weinre > express > connect:
+        reason: None given
+        expires: '2016-11-26T08:54:38.560Z'
+  'npm:express:20140912':
+    - browser-sync > browser-sync-ui > weinre > express:
+        reason: None given
+        expires: '2016-11-26T08:54:38.561Z'
+  'npm:qs:20140806':
+    - browser-sync > browser-sync-ui > weinre > express > qs:
+        reason: None given
+        expires: '2016-11-26T08:54:38.561Z'
+  'npm:qs:20140806-1':
+    - browser-sync > browser-sync-ui > weinre > express > qs:
+        reason: None given
+        expires: '2016-11-26T08:54:38.562Z'
+patch:
+  'npm:minimatch:20160620':
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+    - main-bower-files > vinyl-fs > glob-stream > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+    - gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+    - gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+    - gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+    - gulp-useref > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+    - main-bower-files > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+    - browser-sync > foxy > resp-modifier > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+    - gulp-useref > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+    - main-bower-files > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2016-10-27T08:54:38.801Z'
+  'npm:request:20160119':
+    - phantomjs > request:
+        patched: '2016-10-27T08:54:38.801Z'
+    - browser-sync > localtunnel > request:
+        patched: '2016-10-27T08:54:38.801Z'
+  'npm:tough-cookie:20160722':
+    - phantomjs > request > tough-cookie:
+        patched: '2016-10-27T08:54:38.801Z'
+    - browser-sync > localtunnel > request > tough-cookie:
+        patched: '2016-10-27T08:54:38.801Z'
