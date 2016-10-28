@@ -2,6 +2,6 @@
     'use strict';
 
     angular
-        .module('romanescuAdmin', ['ionic', 'templates', 'ngSanitize', 'ion-floating-menu']);
+        .module('romanescU', ['ionic']);
 
 })();

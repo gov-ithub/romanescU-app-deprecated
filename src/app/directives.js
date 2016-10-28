@@ -1,7 +1,7 @@
 (function() {
     'use strict';
     //Directive used to set metisMenu and minimalize button
-    angular.module('romanescuAdmin')
+    angular.module('romanescU')
         .directive('sideNavigation', function($timeout) {
             return {
                 restrict: 'A',

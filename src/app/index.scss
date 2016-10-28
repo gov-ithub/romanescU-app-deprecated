@@ -3,23 +3,22 @@ To customize the look and feel of Ionic, you can override the variables
 in ionic's _variables.scss file.
 
 For example, you might change some of the default colors:
-
-$light:                           #fff !default;
-$stable:                          #f8f8f8 !default;
-$positive:                        #387ef5 !default;
-$calm:                            #11c1f3 !default;
-$balanced:                        #33cd5f !default;
-$energized:                       #ffc900 !default;
-$assertive:                       #ef473a !default;
-$royal:                           #886aea !default;
-$dark:                            #444 !default;
 */
 
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro';
 @import 'bower_components/ionic/scss/ionic';
-// @import "helpers";
-// @import "components/sidemenu";
-// @import "components/newsfeed"; 
-// @import "components/social"; 
-// @import "components/header"; 
-// @import "components/tabs";
+$light: #fff !default;
+$stable: #f8f8f8 !default;
+$positive: #387ef5 !default;
+$calm: #11c1f3 !default;
+$balanced: #33cd5f !default;
+$energized: #ffc900 !default;
+$assertive: #ef473a !default;
+$royal: #886aea !default;
+$dark: #444 !default;
+@import "components/common/helpers";
+@import "components/common/sidemenu";
+@import "components/common/header";
+@import "components/common/social";
+@import "components/common/tabs";
+@import "components/news/newsfeed";
