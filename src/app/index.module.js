@@ -2,6 +2,6 @@
     'use strict';
 
     angular
-        .module('romanescU', ['ionic']);
+        .module('romanescU', ['ionic', 'ngResource']);
 
 })();
