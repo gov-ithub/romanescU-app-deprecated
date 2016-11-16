@@ -1,10 +1,20 @@
-node_modules/**
-bower_components/**
-www/**
-platforms/**
-plugins/**
-/.idea
-.env
-*.log
+# dependencies
+node_modules/
+bower_components/
+
+# compiled output
 dist/
+www/
+
+# misc
+.idea/
+.env/
 .tmp/
+.vscode/
+platforms/
+plugins/
+*.log
+
+#System Files
+.DS_Store
+Thumbs.db
