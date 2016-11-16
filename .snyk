@@ -38,6 +38,8 @@ patch:
         patched: '2016-10-27T08:54:38.801Z'
     - main-bower-files > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
         patched: '2016-10-27T08:54:38.801Z'
+    - gulp-protractor > protractor > jasmine > glob > minimatch:
+        patched: '2016-11-16T22:23:51.710Z'
   'npm:request:20160119':
     - phantomjs > request:
         patched: '2016-10-27T08:54:38.801Z'
