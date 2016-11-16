@@ -1,0 +1,50 @@
+<script id="showMarker.html" type="text/ng-template">
+    <ion-modal-view>
+        <ion-header-bar>
+            <!-- <h1 class="title">Marker</h1> -->
+        </ion-header-bar>
+        <ion-content class="pane">
+            <img src="assets/map/junks/map-place-streeview.jpg" class="max-responsive" />
+            <div style="padding:10px 20px; background-color:#4285F4; margin-top:-5px;">
+                <h2 style="width:70%; font-size:18px; color:white; display:inline-block;">{{data.name}}</h2>
+                <div class="avatar" style="width:84px; height:84px; float:right; background-color:white; border-radius:50%; text-align:center;">
+                    <img ng-if="!data.type" src="assets/map/types/doctor.png" style="width:64px; 
+                    margin-top:8px;" />
+                    <img ng-if="data.type=='vot'" src="assets/map/types/vot.png" style="width:64px; margin-top:8px;" />
+                </div>
+            </div>
+            
+            <div class="bar bar-footer bar-assertive" ng-click="closeModal()">
+                <h1 class="title">Close</h1>
+            </div>
+
+        </ion-content>
+    </ion-modal-view>
+</script>
+
+
+<ion-floating-menu has-footer="true">
+    <ion-floating-item icon="ion-beer" text="Mici si Bere" click="vm.filterMarkers('bere')"></ion-floating-item>
+    <ion-floating-item icon="ion-ios-cart-outline" text="Magazine" click="vm.filterMarkers('magazin')"></ion-floating-item>
+    <ion-floating-item icon="ion-person-add" text="Biserici" click="vm.filterMarkers('biserici')"></ion-floating-item>
+    <ion-floating-item icon="ion-social-hackernews-outline" text="Sectii Vot" click="vm.filterMarkers('vot')"></ion-floating-item>
+    <ion-floating-item icon="ion-ios-partlysunny" text="Evenimente" click="vm.filterMarkers('events')"></ion-floating-item>
+    <ion-floating-item icon="ion-person" text="Doctori" click="vm.filterMarkers('doctori')"></ion-floating-item>
+</ion-floating-menu>
+
+<ion-view view-title="Harta">
+    <ion-content>
+        <div id="map" data-tap-disabled="true"></div>
+        <div class="tabs tabs-icon-top">
+            <a class="tab-item" href="#/app/news">
+                <i class="icon ion-ios-keypad-outline"></i> News
+            </a>
+            <a class="tab-item" ng-click="vm.goToClosesVote()">
+                <i class="icon ion-clipboard"></i> Votez
+            </a>
+            <a class="tab-item" ng-click="vm.goToClosesAddress()">
+                <i class="icon ion-ios-color-filter-outline"></i> GoTo!
+            </a>
+        </div>
+    </ion-content>
+</ion-view>
