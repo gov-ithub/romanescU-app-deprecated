@@ -1,0 +1,28 @@
+<ion-view view-title="">
+    <ion-content class="padding news-feed">
+        <h3>{{news.data.title}}</h3>
+        
+    	<p class="text-muted">{{news.data.date | date:'short'}}</p>
+        
+        <div class="std">
+        	<div ng-bind-html="news.data.description"></div>
+        	<p><a href="{{news.data.link}}" target="_blank">Vezi sursă</a></p>
+        </div>
+        <footer class="article-meta">
+			<a class="item no-border item-avatar" href="{{authorMeta.url}}" target="_blank">
+        	<img class="avatar" src="{{authorMeta.logo}}" alt="" />
+        	<h2>{{authorMeta.name}}</h2>
+        	<p>{{news.category}}</p>
+      </a>
+		</footer>
+		<footer class="">
+			<div class="social-buttons button-bar">
+				<a class="button button-small icon ion-social-facebook"></a>
+				<a class="button button-small icon ion-social-whatsapp"></a>
+				<a class="button button-small icon ion-social-twitter"></a>
+				<a class="button button-small icon ion-social-googleplus"></a>
+				<a class="button button-small icon ion-social-pinterest"></a>
+			</div>
+		</footer>
+    </ion-content>
+</ion-view>
