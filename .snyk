@@ -1,4 +1,6 @@
-version: v1.5.0
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.8.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:connect:20130701':
     - browser-sync > browser-sync-ui > weinre > express > connect:
@@ -16,6 +18,7 @@ ignore:
     - browser-sync > browser-sync-ui > weinre > express > qs:
         reason: None given
         expires: '2016-11-26T08:54:38.562Z'
+# patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:minimatch:20160620':
     - gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
@@ -50,3 +53,104 @@ patch:
         patched: '2016-10-27T08:54:38.801Z'
     - browser-sync > localtunnel > request > tough-cookie:
         patched: '2016-10-27T08:54:38.801Z'
+  'npm:debug:20170905':
+    - browser-sync > connect > finalhandler > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-adapter > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-client > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > engine.io > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io-client > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-client > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io-client > engine.io-client > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-client > engine.io-client > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-client > engine.io-client > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > connect > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-adapter > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > serve-index > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > localtunnel > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-parser > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-parser > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io-client > socket.io-parser > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-client > socket.io-parser > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-client > socket.io-parser > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > serve-static > send > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > engine.io > debug:
+        patched: '2017-11-02T00:23:30.444Z'
+  'npm:ms:20170412':
+    - karma > socket.io > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > engine.io > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-adapter > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-adapter > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-client > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > engine.io > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io-client > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-client > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io-client > engine.io-client > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-client > engine.io-client > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-client > engine.io-client > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > connect > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > connect > finalhandler > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > serve-index > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-parser > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-parser > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io-client > socket.io-parser > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-client > socket.io-parser > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - karma > socket.io > socket.io-client > socket.io-parser > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > serve-static > send > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+    - browser-sync > serve-static > send > debug > ms:
+        patched: '2017-11-02T00:23:30.444Z'
+  'npm:tough-cookie:20170905':
+    - phantomjs > request > tough-cookie:
+        patched: '2017-11-02T00:23:30.444Z'
